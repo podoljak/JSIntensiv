@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="HW!">
+        <p>Hello world!</p>
+    </div>
+    <script>
+        // Task 1. Cтворити масив з п'яти числових значень та вивести його в консоль.
+
+        let massive1 = [1, 2, 3, 4, 5];
+        console.log(massive1);
+
+        // Task 2. Cтворити масив з п'яти стрічкових значень та вивести його в консоль.
+
+        let massive2 = ['one', 'two', 'three', 'four', 'five'];
+        console.log(massive2);
+
+        // Task 3. Cтворити масив з п'яти значень стрічкового, числового та булевого типів 
+        // та вивести його в консоль.
+
+        let massive3 = ['one', 'two', 3, 4, true];
+        console.log(massive3);
+
+        // Task 4. Створити пустий масив. 
+        // Наповнити його будь-якими значеннями звертаючись до конкретного індексу. 
+        // Вивести в консоль.
+
+        let notEmptyMassive = [];
+        notEmptyMassive[0] = '1';
+        notEmptyMassive[1] = '2';
+        notEmptyMassive[2] = true;
+        notEmptyMassive[3] = 'four string';
+        notEmptyMassive[4] = 5 < 6;
+        notEmptyMassive[5] = 100;
+        console.log(notEmptyMassive);
+
+
+        // Task 5. За допомогою циклу for і document.write() 
+        // вивести 10 блоків div з довільним текстом всередині.
+
+        for (let i = 0; i < 10; i++) {
+            document.write('<div>Hello world!</div>');
+        }
+
+        // Task 6. За допомогою циклу for і document.write() 
+        // вивести 10 блоків div з довільним текстом і індексом всередині.
+
+        for (let i = 0; i < 10; i++) {
+            document.write('<div>Hello world!</div>' + ' ' + i);
+        }
+
+        // Task 7. За допомогою циклу while вивести в документ 20 блоків h1 
+        // з довільним текстом всередині.
+
+        let k = 0;
+        while (k < 20) {
+            document.write('<h1>Hello world!</h1>');
+            k++;
+        }
+
+        // Task 8. За допомогою циклу while вивести в документ 20 блоків h1 
+        // з довільним текстом і індексом всередині.
+
+        let j = 0;
+        while (j < 20) {
+            document.write('<h1>Hello world!</h1>' + ' ' + j + '<br>');
+            j++;
+        }
+
+        // Task 9. Створити масив з 10 числових елементів. 
+        // Вивести в консоль всі його елементи в циклі.
+
+        let numbersMassive = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        for (let i = 0; i < numbersMassive.length; i++) {
+            console.log(numbersMassive[i]);
+        }
+
+        // Task 10. Створити масив з 10 строкрових елементів. 
+        // Вивести в консоль всі його елементи в циклі.
+
+        let stringMassive = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'];
+        for (let i = 0; i < stringMassive.length; i++) {
+            console.log(stringMassive[i]);
+        }
+
+        // Task 11. Створити масив з 10 елементів будь-якого типу. 
+        // Вивести в консоль всі його елементи в циклі.
+
+        let allMassive = [true, 'b', 'c', 4, 5, 6, '5 > 6', false, '10', 'j'];
+        for (let i = 0; i < allMassive.length; i++) {
+            console.log(allMassive[i]);
+        }
+
+        // Task 12. Створити масив з 10 елементів числового, 
+        // стірчкового і булевого типу. За допомогою if та typeof вивести тільки булеві елементи.
+        // (Використано масив із завдання 11.)
+
+        for (let i = 0; i < allMassive.length; i++) {
+            let medium = typeof(allMassive[i]);
+            if (medium == "boolean") {
+                console.log(allMassive[i]);
+                document.write(allMassive[i] + '<br>');
+            }
+        }
+
+        // Task 13. Створити масив з 10 елементів числового, стірчкового і булевого типу. 
+        // За допомогою if та typeof вивести тільки числові елементи.
+        // (Використано масив із завдання 11.)
+
+        for (let i = 0; i < allMassive.length; i++) {
+            let medium = typeof(allMassive[i]);
+            if (medium == "number") {
+                console.log(allMassive[i]);
+                document.write(allMassive[i] + '<br>');
+            }
+        }
+
+        // Task 1.14. Створити масив з 10 елементів числового, стрічкового і булевого типу. 
+        // За допомогою if та typeof вивести тільки рядкові елементи.
+        // (Використано масив із завдання 11.)
+
+        for (let i = 0; i < allMassive.length; i++) {
+            let medium = typeof(allMassive[i]);
+            if (medium == "string") {
+                console.log(allMassive[i]);
+                document.write(allMassive[i] + '<br>');
+            }
+        }
+
+        // Task 15. Створити порожній масив. 
+        // Наповнити його 10 елементами (різними за типами) через звернення до конкретних індексів. 
+        // Вивести в консоль всі його елементи в циклі.
+
+        let nextMassive = [];
+        nextMassive[0] = '1';
+        nextMassive[1] = '2';
+        nextMassive[2] = 3;
+        nextMassive[3] = 4;
+        nextMassive[5] = 5;
+        nextMassive[4] = false;
+        nextMassive[6] = 5 < 6;
+        nextMassive[7] = 'eighth';
+        nextMassive[8] = 'nine';
+        nextMassive[9] = 'Hello world!';
+        for (let i = 0; i < nextMassive.length; i++) {
+            console.log(nextMassive[i]) + '<br>';
+        }
+
+        // Task 16. Створити цикл for на 10  ітерацій з кроком 1. 
+        // Вивести поточний номер кроку через console.log та document.write
+
+        for (let i = 0; i < 10; i++) {
+            console.log(i);
+            document.write(i + "<br>");
+        }
+
+        // Task 17. Створити цикл for на 100 ітерацій з кроком 1. 
+        // Вивести поточний номер кроку через console.log та document.write
+
+        for (let i = 0; i < 100; i++) {
+            console.log(i);
+            document.write(i + "<br>");
+        }
+
+        // Task 18. Створити цикл for на 100 ітерацій з кроком 2. 
+        // Вивести поточний номер кроку через console.log та document.write
+
+        for (let i = 0; i < 100; i = i + 2) {
+            console.log(i);
+            document.write(i + "<br>");
+        }
+
+        // Task 19. Створити цикл for на 100 ітерацій. 
+        // Вивести тільки парні кроки. через console.log + document.write
+        // (Якщо я правильно зрозумів, виводимо саме за номером кроку, а не індексу.)
+
+        for (let i = 0; i < 100; i++) {
+            let medium = (i % 2);
+            if (medium > 0) {
+                console.log(i);
+                document.write(i + "<br>");
+            }
+        }
+
+        // Task 20. Створити цикл for на 100 ітерацій. 
+        // Вивести тільки непарні кроки. через console.log + document.write
+
+        for (let i = 0; i < 100; i++) {
+            let medium = (i % 2);
+            if (medium == 0) {
+                console.log(i);
+                document.write(i + "<br>");
+            }
+        }
+
+        // Task 21. Відтворити роботу годинника, відрахувавши 2 хвилини 
+        // (2 цикли! 1й - хвилини, 2й - секунди)
+
+        for (let minutes = 0; minutes < 2; minutes++) {
+            for (let seconds = 0; seconds < 60; seconds++) {
+                console.log(minutes, seconds);
+            }
+
+        }
+
+        // Task 22. Відтворити роботу годинника, відрахувавши  2 години  
+        // (3 цикли! 1й - години, 2й - хвилини, 3й - секунди)
+
+        for (let hours = 0; hours < 2; hours++) {
+            for (let minutes = 0; minutes < 60; minutes++) {
+                for (let seconds = 0; seconds < 60; seconds++) {
+                    console.log(hours, minutes, seconds);
+                }
+            }
+
+        }
+
+        // Additionally.
+        // Task Ad1. Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу for зібрати всі букви в слово.
+
+        let adMassive = ['a', 'b', 'c'];
+        let word1 = '';
+        for (i = 0; i < adMassive.length; i++) {
+            word1 += adMassive[i];
+        }
+        console.log(word1);
+
+        // Task Ad2. Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу while зібрати всі букви в слово.
+
+        let adMassive2 = ['a', 'b', 'c'];
+        let word2 = '';
+        let w = 0;
+        while (w < adMassive2.length) {
+            word2 += adMassive2[w];
+            w++;
+        }
+        console.log(word2);
+
+        // Task Ad3. Дано масив: [ 'a', 'b', 'c'] . 
+        // За допомогою циклу for of зібрати всі букви в слово.
+
+        let adMassive3 = ['a', 'b', 'c'];
+        let z = '';
+        for (let i of adMassive3) {
+            z = z + i;
+        }
+        console.log(z);
+
+        // Task Ad4. Дано масив: [ 'a', 'b', 'c'] . 
+        // За допомогою циклу for if зібрати всі букви в слово.
+        let adMassive4 = ['a', 'b', 'c'];
+        let x = '';
+        for (let y in adMassive4) {
+            x += adMassive4[y];
+        }
+        console.log(x);
+    </script>
+</body>
+
+</html>
