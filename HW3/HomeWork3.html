@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Task 1. Cтворити об'єкт (не меньше 5ти властивостей) який описує:
+        // Task 1.1. Cобаку.
+        let dog = {
+            nickname: 'Barbos',
+            age: 8,
+            color: 'black',
+            breed: 'mongrel',
+            tail: true
+        };
+
+        // Task 1.2. Людину.
+
+        let man = {
+            name: 'Denys',
+            sex: 'male',
+            age: 34,
+            education: 'higher',
+            work: true
+        };
+
+        // Task 1.3. Автомобіль.
+        let car = {
+            car_brand: 'fiat',
+            car_model: '500LTracking',
+            engine: 'MultiJet_1_3L',
+            pover: 85,
+            gear: 6
+        };
+
+        // Task 1.4. Квартиру.
+        let flat = {
+            room: 3,
+            floor: 5,
+            adres: 'Nechaya_52',
+            area: 86,
+            elevator: true
+        };
+
+        // Task 1.5. Книгу.
+        let book = {
+            author: 'Oldy',
+            name: 'Put`_mecha',
+            pages: 512,
+            cover: 'hard',
+            ganre: 'fantasy'
+        };
+
+        // Task 2. Створити масив та вивести його в консоль:
+        // Task 2.1. З 5 собак.
+
+        let dogsMassive = [{
+            nickname: 'Barbos',
+            age: 8,
+            color: 'black'
+        }, {
+            nickname: 'Bobic',
+            age: 5,
+            color: 'black'
+        }, {
+            nickname: 'Juchka',
+            age: 5,
+            color: 'red'
+        }, {
+            nickname: 'Bim',
+            age: 3,
+            color: 'grey'
+        }, {
+            nickname: 'Bonyfaciy',
+            age: 7,
+            color: 'gold'
+        }];
+
+        console.log(dogsMassive);
+
+        // Task 2.2. 3 5 людей.
+
+        let peoples = [{
+            name: 'Denys',
+            sex: 'male',
+            age: 34
+        }, {
+            name: 'Petro',
+            sex: 'male',
+            age: 25,
+        }, {
+            name: 'Kateryna',
+            sex: 'female',
+            age: 30
+        }, {
+            name: 'Inokentiy',
+            sex: 'male',
+            age: 12
+        }, {
+            name: 'Svitlana',
+            sex: 'female',
+            age: 27
+        }];
+
+        console.log(peoples);
+
+        // Task 2.3. З 5 автомобілів.
+
+        let cars = [{
+            brand: 'fiat',
+            model: '500LTracking',
+            pover: 85
+        }, {
+            brand: 'ford',
+            model: 'focus',
+            pover: 90
+        }, {
+            brand: 'ZAZ',
+            model: 'eared',
+            pover: 30
+        }, {
+            brand: 'volvo',
+            model: 'xc90',
+            pover: 250
+        }, {
+            brand: 'kia',
+            model: 'stonic',
+            pover: 100
+        }];
+
+        console.log(cars);
+
+        // Task 3. Створити об'єкт (не меньше 5ти властивостей і 
+        // одна з властивостей обов'язково повинна бути об'єктом, ще одна - масивом):
+
+        // Task 3.1. який описує будинок.
+
+        let house = {
+            flors: 1,
+            rooms: {
+                room1: 'kitchen',
+                room2: 'bathroom',
+                room3: 'wardroobe',
+                room4: 'bedroom'
+            },
+            house_extensions: ['garage', 'winter garden', 'terrace'],
+            color: 'red',
+            matherial: 'brick'
+        };
+        //console.log(house);
+
+        // Task 3.2. який описує водія.
+
+        let driver = {
+            name: 'Vasya',
+            skils: ['A', 'B', 'C', 'D'],
+            routes: {
+                monday: 'Yampil-Vinnytsja',
+                wednesday: 'Yampil-Kyiv',
+                friday: 'Kisnytsja-Mogyliv'
+            },
+            phone: 0969696969,
+            bad_habids: 'shanson'
+        };
+        //console.log(driver);
+
+        // Task 3.3. який описує іграшку.
+
+        let toy = {
+            name: 'bear',
+            deffects: false,
+            filler: 'holowfiber',
+            words_it_speak: ['hello', 'mama', 'oh realy', 'i am here'],
+            characteristic: {
+                start_age: 2,
+                allergy: 'no allergy'
+            }
+        };
+        //console.log(toy);
+
+        // Task 3.4. який описує стіл.
+
+        let table = {
+            name: 'rgjogsnaight',
+            size: {
+                height: 85,
+                length: 170,
+                width: 70
+            },
+            matherial: 'oak',
+            for_using: ['kitchen', 'office', 'dining room'],
+            coating: 'carnaub waxe'
+        };
+        //console.log(table);
+
+        // Task 3.5. який описує сумку.
+
+        let bag = {
+            volume: 24,
+            size: {
+                height: 15,
+                length: 50,
+                width: 32
+            },
+            matherial: 'neopren',
+            place_for_laptop: true,
+            functions: ['sity bag', 'weekend hike']
+        };
+        //console.log(bag);
+
+        // Task 4. Дано масив:
+
+        let users = [{
+            name: 'vasya',
+            age: 31,
+            status: false
+        }, {
+            name: 'petya',
+            age: 30,
+            status: true
+        }, {
+            name: 'kolya',
+            age: 29,
+            status: true
+        }, {
+            name: 'olya',
+            age: 28,
+            status: false
+        }, {
+            name: 'max',
+            age: 30,
+            status: true
+        }, {
+            name: 'anya',
+            age: 31,
+            status: false
+        }, {
+            name: 'oleg',
+            age: 28,
+            status: false
+        }, {
+            name: 'andriy',
+            age: 29,
+            status: true
+        }, {
+            name: 'masha',
+            age: 30,
+            status: true
+        }, {
+            name: 'olya',
+            age: 31,
+            status: false
+        }, {
+            name: 'max',
+            age: 31,
+            status: true
+        }];
+
+        // звернутися до відповідної комірки масиву і відповідного параметру об'єкта
+        // та вивести в консольх наступне:
+
+        // Task 4.1. статус Андрія.
+        for (const user of users) {
+            if (user.name === 'andriy') {
+                console.log(user.status);
+            }
+
+        }
+
+        // Task 4.2. статус Максима.
+
+        for (const user of users) {
+            if (user.name === 'max') {
+                console.log(user.status);
+            }
+        }
+
+        // Task 4.3. ім'я передостаннього об'єкту.
+
+
+        for (const user of users) {
+            if (user == users[users.length - 2]) {
+                console.log(user.name);
+            }
+        }
+
+        // Task 4.4. ім'я третього об'єкта.
+
+        for (const user of users) {
+            if (user == users[2]) {
+                console.log(user.name);
+            }
+        }
+
+        // Task 4.5. вік Олега.
+
+        for (const user of users) {
+            if (user.name === 'oleg') {
+                console.log(user.age);
+            }
+        }
+
+        // Task 4.6. вік Олі.
+        for (const user of users) {
+            if (user.name === 'olya') {
+                console.log(user.age);
+            }
+        }
+
+        // Task 4.7. вік + ім'я 5го об'єкта.
+
+        for (const user of users) {
+            if (user == users[4]) {
+                console.log(user.age + ' ' + user.name);
+            }
+        }
+
+        // Task 4.8. вік + сатус Анни.
+
+        for (const user of users) {
+            if (user.name === 'anya') {
+                console.log(user.age + ' ' + user.status);
+            }
+        }
+    </script>
+</body>
+
+</html>
